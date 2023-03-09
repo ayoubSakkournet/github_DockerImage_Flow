@@ -33,11 +33,11 @@ jobs:
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v6
       with:
-      image: ayoubsakkdev/docker_image_springboot
-      tags: latest
-      registry: docker.io
-      dockerfile: Dockerfile
-      username: ${{ secrets.DOCKER_USERNAME }}
-      password: ${{ secrets.DOCKER_PASSWORD }}
+        image: ayoubsakkdev/docker_image_springboot
+        tags: latest
+        registry: docker.io
+        dockerfile: Dockerfile
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
 
 
