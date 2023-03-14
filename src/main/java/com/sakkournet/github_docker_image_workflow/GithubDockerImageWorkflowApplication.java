@@ -11,7 +11,7 @@ public class GithubDockerImageWorkflowApplication {
 
 	@GetMapping("/welcome")
 	public String welcome(){
-		return "Welcome to javatechie !";
+		return "Welcome to the Docker image ";
 	}
 
 
