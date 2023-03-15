@@ -47,4 +47,8 @@ jobs:
         status: ${{ job.status }}
         title: 'Maven build completed'
         fields: repo,message,author,commit,action,eventName
+    - name: Run code quality check
+        run: |
+              ./mvnw checkstyle:check
+              ./mvnw spotbugs:check    
 
