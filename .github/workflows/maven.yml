@@ -47,4 +47,8 @@ jobs:
         status: ${{ job.status }}
         title: 'Maven build completed'
         fields: repo,message,author,commit,action,eventName
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Run JUnit tests with Maven
+      run: mvn test -Dtest=com.sakkournet.github_docker_image_workflow.GithubDockerImageWorkflowApplicationTests    
 
